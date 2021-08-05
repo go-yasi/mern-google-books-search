@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
+import ImageUploader from "../components/ImageUploader";
 
 class Home extends Component {
   state = {
@@ -67,6 +68,9 @@ class Home extends Component {
               </h1>
               <h2 className="text-center">Search for and Save Books of Interest.</h2>
             </Jumbotron>
+          </Col>
+          <Col size="md-12">
+            <ImageUploader/>
           </Col>
           <Col size="md-12">
             <Card title="Book Search" icon="far fa-book">
